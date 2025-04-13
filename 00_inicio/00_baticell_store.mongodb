@@ -1,0 +1,16 @@
+//crear una base de datos
+use ("baticell_store")
+
+//crear la coleccion y al menos un documento
+db.producto.insertOne (
+    {
+        name: "Huawei",
+        precio: 3010,
+        cantidad: 50,
+        color: ["rojo", "verde", "negro"]
+    }
+)
+
+//listar el documento
+db.producto.find();
+
